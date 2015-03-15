@@ -5,8 +5,8 @@ var site = require('apostrophe-site')({
   shortName: 'aspidweb',
   hostName: 'aspidweb',
   title: 'ASPID',
-  sessionSecret: 'pepiniere de talents',
-  adminPassword: 'aspid2013',
+  sessionSecret: 'demo',
+  adminPassword: 'demo',
 
   // Force a2 to prefix all of its URLs. It still
   // listens on its own port, but you can configure
