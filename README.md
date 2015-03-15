@@ -1,3 +1,3 @@
-# Apostrophe Boilerplate
+# ASP'ID boilerplate, based on Apostrophe
 
-Apostrophe Boilerplate is a minimal starting point for Apostrophe projects.
+ASP'ID Web site based on Apostrophenow
