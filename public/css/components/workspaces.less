@@ -1,0 +1,56 @@
+.aspid-workspaces-marquee
+{
+  width: 100%;
+  height: 200px;
+  //margin-bottom: 2rem;
+
+  //background: url('/images/demo_workspace_all.png') no-repeat center center;
+  background: url('/images/alps.jpg') no-repeat top left;
+  background-size: cover;
+  //background-size: auto 100%;
+  //background-position: 20% ;
+
+  &::after
+  {
+    position: relative;
+    top: 100%;
+    left: 0; right: 0;
+
+    display: block;
+    content: '';
+    height: 8px;
+
+    background-color: fade(@dark, 20%);
+  }
+
+  @media screen and @narrow
+  {
+    height: 200px;
+    // background-size: contain;
+    // background-image: url('/images/demo_workspace_green.png');
+    margin-bottom: 2rem;
+  }
+}
+
+.aspid-workspaces-marquee h5
+{
+  color: @light-gold ;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  margin-top: 150px;
+  //text-align:right;
+}
+
+.aspid-workspace
+{
+  height: 616px;
+  margin: 6rem 0;
+
+}
+
+.aspid-workspace--blue
+{
+  background: url('/images/alps.png') no-repeat center;
+  background-size: 392px 392px;
+}

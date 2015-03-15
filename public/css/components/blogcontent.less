@@ -1,0 +1,80 @@
+// LAYOUT
+
+.aspid-blog-content
+{
+  position: relative;
+
+  .inline-block(top);
+  width: 66.66666%;
+  padding-top: 2rem;
+
+  @media screen and @narrow
+  {
+    width: 100%;
+  }
+}
+
+.aspid-blog-gutter
+{
+  position: relative;
+
+  .inline-block(top);
+  width: 50%;
+  @media screen and @iphone { float: left; width: auto; }
+}
+
+// AUTHOR in the GUTTER
+
+.aspid-blog-author
+{
+  margin-top: -90px;
+  @media screen and @narrow{ margin-top: -75px/2; }
+  @media screen and @iphone{ margin-right: 0rem; }
+}
+
+
+.aspid-blog-timestamp
+ {
+   padding-left: 34% ;
+   float: right;
+ }
+
+.aspid-blog-author-image
+{
+  width: 100px;
+  height: 100px;
+
+  background-color: @gray;
+  border: 4px solid @light-gold;
+  border-radius: 2px;
+
+  background-image: url('/images/demo_author_placeholder.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px 65px;
+
+  @media screen and @narrow{
+    width: 75px; height: 75px;
+  }
+
+  @media screen and @iphone{
+    // width: 50px; height: 50px;
+    img {opacity: 0;}
+  }
+}
+
+.aspid-blog-author-bio
+{
+  width: 75%;
+  margin-top: 0.5em;
+
+  .font-size(@text-tiny);
+  line-height: 1.25em;
+}
+
+// BLOG WIDGET at the BOTTOM
+
+.aspid-blog-see-all
+{
+  text-align: right;
+}

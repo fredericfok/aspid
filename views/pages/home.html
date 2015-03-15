@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block bodyClass %}{{ super() }} home-page{% endblock %}
+
+{# breadcrumbs are excluded from the homepage #}
+{% block breadcrumbs %}
+{% endblock %}
+
+{% block headerContent %}
+<div class="aspid-workspaces-marquee">
+    <h5> "Plus grand est l'obstacle, et plus grande est la gloire de le surmonter" [Molière]</h5>
+{% endblock %}
+
+{% block main %}
+
+<div class="pageheader inner">
+  <div class="block aspid-content">
+    <div class="column width-66">
+        <div class="inner aspid-content">
+          <div class="block block--5 ">
+            <div class="inner">
+            {{ aposArea(page, 'homeDescription', {
+              controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'slideshow', 'video'],
+              styles: [
+                { value: 'p', label: 'Text' },
+                { value: 'h3', label: 'Title' },
+                { value: 'h5', label: 'Subtitle' }
+              ],
+              lockups: ['left', 'right']
+            }) }}
+            </div>
+          </div>
+          <div class="block">
+            <div class="inner block-card">
+
+              {{ aposBlocks(page, 'main', [ 'one', 'two' ]) }}
+
+            </div>
+          </div>
+        </div>
+    </div>{#
+  #}<div class="column width-33 align-right">
+      <div class="inner aspid-content">
+        <div class="block block--5 aspid-quicks">
+          <ul>
+            <li>
+                <div id="fb-root"></div>
+                <a href="{{facebook.fb_public_loc}}"><img src="{{facebook.fb_app_logo}}?type=normal"/></a><br/>
+                <div class="fb-like" data-href="{{facebook.url_ref}}" data-send="false" data-layout="button_count" data-width="400" data-show-faces="false"></div>
+                <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId={{facebook.fb_app_id}}";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                </script>
+            </li>
+            <li>
+                <!--
+                <div class="addthis_toolbox addthis_default_style ">
+                    <a class="addthis_button_preferred_1"></a>
+                    <a class="addthis_button_preferred_2"></a>
+                    <a class="addthis_button_preferred_3"></a>
+                    <a class="addthis_button_preferred_4"></a>
+                    <a class="addthis_button_compact"></a>
+                    <a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f9b030d7caf5ae6"></script>
+                -->
+            </li>
+          </ul>
+          <div class="inner">
+          {{ aposArea(page, 'homequicks', {
+            controls: ['style', 'bold', 'italic', 'createLink', 'unlink', 'html', 'slideshow', 'video'],
+            styles: [
+              { value: 'p', label: 'Text' },
+              { value: 'h3', label: 'Title' },
+              { value: 'h5', label: 'Subtitle' }
+            ],
+            lockups: ['left', 'right']
+          }) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

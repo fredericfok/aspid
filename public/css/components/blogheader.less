@@ -1,0 +1,130 @@
+.aspid-blog-header-background .demo-inner
+{
+  position: relative;
+  height: 100%;
+}
+
+.aspid-blog-header
+{
+  position: absolute;
+  // padding-left: 17%;
+  bottom: 0.5rem;
+  left: 0; right: 0;
+  // width: 75%;
+  color: @light-gold;
+  z-index: 1;
+
+  .aspid-blog-header-wrapper
+  {
+    padding-left: 10%;
+  }
+
+  .aspid-blog-header-wrapper h3, h4, h5, h6
+  {
+    color: @aspid-emeraude ;
+    background-color: fade(@aspid-blue, 85%);
+  }
+
+  @media screen and @iphone
+  {
+    left: 5%;
+    width: 70%;
+
+   .aspid-blog-header-wrapper
+    {
+      padding-left: 0;
+    }
+
+  }
+}
+
+.aspid-blog-header-background
+{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin-top:2rem;
+  padding-top: 1rem;
+
+  @media screen and @narrow
+  {
+    height: 300px;
+  }
+  @media screen and @iphone
+  {
+    height: 300px;
+  }
+
+  .aspid-blog-header-block
+  {
+    height: 280px;
+    @media screen and @narrow
+    {
+      height: 250px;
+    }
+    @media screen and @iphone
+    {
+      height: 250px;
+    }
+  &::after
+  {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+    display: block;
+    content: '';
+
+    background-color: fade(@dark, 30%);
+  }
+  }
+}
+
+
+.aspid-blog-header-block
+{
+  height: 100%;
+  max-width: 1200px;
+  background-size: contain;
+  position: relative;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  // position: absolute;
+  // top: 0; right: 0; bottom: 0; left: 0;
+  .apos-slideshow .apos-slideshow-items
+  {
+    display: block;
+  }
+  .apos-ui-container {top: 6rem; left: 1rem;}
+  .apos-singleton, .apos-normal-view, .apos-content, .apos-slideshow
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  .apos-slideshow-items
+  {
+    display: block;
+    height: 100%;
+
+    .apos-slideshow-item
+    {
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .apos-slideshow-image
+    {
+      opacity: 0;
+    }
+  }
+
+
+}
+
+
+.aspid-blog-header-slideshow-control
+{
+  top: 6rem;
+  position: relative;
+}

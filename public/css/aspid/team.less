@@ -1,0 +1,47 @@
+.aspid-circular {
+
+    .apos-slideshow-items,
+    .apos-slideshow,
+    .apos-content,
+    .apos-normal-view
+    {
+      //height: 100%;
+      //width: 100%;
+    }
+    img
+    {
+      opacity: 0;
+    }
+
+    .apos-slideshow-item
+    {
+      width: 140px;
+    	height: 140px;
+    	border-radius: 70px;
+    	-webkit-border-radius: 70px;
+    	-moz-border-radius: 70px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and @narrow
+    {
+      width: 100%;
+      float: left;
+
+      &, .apos-slideshow-item
+      {
+        width: 80px;
+      	height: 80px;
+      	border-radius: 40px;
+      	-webkit-border-radius: 40px;
+      	-moz-border-radius: 40px;
+      }
+
+
+      .apos-slideshow-item {background-size: cover; background-position: center; }
+      img{ opacity: 0; height: 150px;}
+    }
+
+
+}
