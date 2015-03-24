@@ -129,8 +129,8 @@ var site = require('apostrophe-site')({
       ]
     },
     'apostrophe-facebook': {
-        fbAppId: '336391076409804',
-        fbAppSecret: 'bd86ae469b5eb9a00d8c6e7d58dac7d5'
+        fbAppId: 'xxxx',
+        fbAppSecret: 'xxxx'
     },
     'apostrophe-groups': {},
     'apostrophe-browserify': {
