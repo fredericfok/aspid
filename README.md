@@ -3,24 +3,27 @@
 ASP'ID Web site based on Apostrophenow
 
 
-assumption : what needs to be installed first 
+## Assumptions : what needs to be installed first 
 - Git 
 - Node & NPM
 - MongoDB
 - Imagemagick
 
-git clone https://github.com/fredericfok/aspid.git 
+## Get the code 
+	git clone https://github.com/fredericfok/aspid.git 
 
-npm install 
+## Install the dependencies
+	npm install 
 
-mkdir data 
-cd data 
-cp local.example.js data/local.js 
+## create local parameters
+	mkdir data 
+	cd data 
+	cp local.example.js data/local.js 
 
 
-First time to use : 
-node app apostrophe:reset 
-node app
+## First time to use : 
+	node app apostrophe:reset 
+	node app
 
 
 
